@@ -1,0 +1,18 @@
+Pertanyaan Refleksi
+Setelah menyelesaikan kode, jawab pertanyaan berikut:
+
+1. Apa yang dimaksud dengan constructor overloading dalam pemrograman berorientasi objek?
+2. Bagaimana cara Java membedakan constructor yang memiliki nama sama namun parameter berbeda?
+3. Apa perbedaan antara mengakses variabel secara langsung (misalnya: objek.variabel = nilai) dengan menggunakan method setter?
+4. Jelaskan konsep encapsulation dan bagaimana method dapat membantu melindungi data dalam sebuah class!
+5. Mengapa constructor tidak memiliki return type, bahkan tidak menggunakan kata kunci void?
+
+Jawaban
+
+1. Constructor overloading itu kondisi di mana sebuah class punya lebih dari satu constructor, tapi parameternya berbeda. Tujuannya supaya kita bisa membuat objek dengan cara yang fleksibel sesuai kebutuhan data yang tersedia.
+2. Java membedakannya dari jumlah parameter, tipe data parameter, dan urutan parameter. Selama kombinasi parameternya unik, Java tahu harus panggil constructor yang mana.
+3. Kalau kita langsung menulis objek.variabel = nilai;, kita benar-benar membuka akses penuh ke variabel itu.
+   Sedangkan setter memberi kita pengaman, misalnya bisa memberi validasi, bisa mencegah nilai yang tidak masuk akal, bisa membatasi perubahan variabel. Jadi setter itu semacam gerbang sebelum nilai masuk ke variabel.
+4. Encapsulation adalah konsep untuk menyembunyikan data penting dalam class, biasanya dengan private. Aksesnya dikontrol lewat method getter/setter. Dengan cara ini, data jadi lebih aman karena tidak bisa diubah sembarangan dari luar.
+5. Karena constructor bukan method biasa constructor dipanggil saat objek dibuat, dan tugasnya langsung menginisialisasi objek tersebut. Objek yang tercipta otomatis menjadi returnnya, jadi tidak perlu menuliskan return type.
+
